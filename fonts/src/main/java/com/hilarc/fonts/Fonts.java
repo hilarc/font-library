@@ -21,7 +21,7 @@ public class Fonts {
     public static final int NUNITO_BLACK = 12;
     public static final int NUNITO_BLACKITALIC = 13;
 
-    private static Typeface getTypeface(Context context, int font) {
+    public static Typeface getFont(Context context, int font) {
         Typeface NunitoExtraLight = Typeface.createFromAsset(context.getAssets(), "fonts/Nunito-ExtraLight.ttf");
         Typeface NunitoExtraLightItalic = Typeface.createFromAsset(context.getAssets(), "fonts/Nunito-ExtraLightItalic.ttf");
         Typeface NunitoLight = Typeface.createFromAsset(context.getAssets(), "fonts/Nunito-Light.ttf");
@@ -69,14 +69,6 @@ public class Fonts {
             default:
                 return null;
         }
-    }
-
-    public static void ChaneFont(Context context, EditText editText, int font) {
-        editText.setTypeface(getTypeface(context,font));
-    }
-
-    public static void ChaneFont(Context context, TextView textView, int font) {
-        textView.setTypeface(getTypeface(context,font));
     }
 
 }
