@@ -2,8 +2,6 @@ package com.hilarc.fonts;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class Fonts {
     public static final int NUNITO_EXTRALIGHT = 0;
@@ -70,5 +68,4 @@ public class Fonts {
                 return null;
         }
     }
-
 }
